@@ -18,8 +18,24 @@
 
 + (void)configureResponseMapping:(RKObjectManager *)objectManager
 {
+    
+    
+    
     RKObjectMapping *newsMapping = [RKObjectMapping mappingForClass:[TMBONews class]];
     [newsMapping addAttributeMappingsFromDictionary:[TMBONews responseMappingDictionary]];
+    
+    RKDynamicMapping* dynamicMapping = [RKDynamicMapping new];
+    [dynamicMapping setObjectMappingForRepresentationBlock:^(id data) {
+        RKObjectMapping *newsDictionaryMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
+        NSArray* keys = [data allKeys];
+        for(NSString *key in keys){
+            RKRelationshipMapping *relationShipResponseNewsMapping = [RKRelationshipMapping relationshipMappingFromKeyPath:key
+                                                                                                                 toKeyPath:key
+                                                                                                               withMapping:newsMapping];
+            [newsDictionaryMapping addPropertyMapping:relationShipResponseNewsMapping];
+        }
+        return newsDictionaryMapping;
+    } ];
     
     RKObjectMapping *partnerMapping = [RKObjectMapping mappingForClass:[TMBOPartner class]];
     [partnerMapping addAttributeMappingsFromDictionary:[TMBOPartner responseMappingDictionary]];
@@ -31,7 +47,7 @@
     [newsMapping addPropertyMapping:relationShipResponseNewsMapping];
     
     RKResponseDescriptor *responseNewsDescriptor =
-    [RKResponseDescriptor responseDescriptorWithMapping:newsMapping
+    [RKResponseDescriptor responseDescriptorWithMapping:dynamicMapping
                                                  method:RKRequestMethodGET
                                             pathPattern:kTMGetNewsUrl
                                                 keyPath:@"data"

@@ -13,7 +13,7 @@
 @property (nonatomic, strong) RKObjectManager *imagesObjectManager;
 @property (nonatomic, strong) RKObjectManager *placesObjectManager;
 
-- (TMRestKitManager *)shared;
++ (TMRestKitManager *)shared;
 
 - (void)config;
 

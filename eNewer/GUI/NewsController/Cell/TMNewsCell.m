@@ -26,7 +26,7 @@
     self.dateLabel.text = news.newsDate;
     self.titleLabel.text = news.newsTitle;
     if(news.newsImage){
-        [self.newsImageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",kTMNewsBaseUrl,news.newsImage]] placeholderImage:nil];
+        [self.newsImageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",kTMNewsBaseUrl,news.newsImage]] placeholderImage:nil];
     } else {
         self.newsImageView.image = nil;
     }

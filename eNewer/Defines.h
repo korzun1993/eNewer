@@ -8,7 +8,7 @@
 
 #pragma mark - Network
 
-#define kTMNewsBaseUrl @"https://kopilka-bonus.ru"
+#define kTMNewsBaseUrl @"http://kopilka-bonus.ru"
 #define kTMGetNewsUrl @"/mob_app/"
 #define kTMPlacesBaseUrl @"http://www.bashneft-azs.ru"
 #define kTMImagesBaseUrl @"http://88.198.31.245:8072"

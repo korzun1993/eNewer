@@ -46,6 +46,7 @@
 		D3751C2C17A5AFAC00C58FE3 /* TMNewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3751C2B17A5AFAC00C58FE3 /* TMNewsController.xib */; };
 		D3751C2F17A5B05D00C58FE3 /* TMNewsTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C2E17A5B05D00C58FE3 /* TMNewsTransaction.m */; };
 		D3751C3217A5B41700C58FE3 /* TMPlacesTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C3117A5B41700C58FE3 /* TMPlacesTransaction.m */; };
+		D3751C3517A5B58A00C58FE3 /* TMAPIProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C3417A5B58A00C58FE3 /* TMAPIProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,9 @@
 		D3751C2E17A5B05D00C58FE3 /* TMNewsTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNewsTransaction.m; sourceTree = "<group>"; };
 		D3751C3017A5B41700C58FE3 /* TMPlacesTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPlacesTransaction.h; sourceTree = "<group>"; };
 		D3751C3117A5B41700C58FE3 /* TMPlacesTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPlacesTransaction.m; sourceTree = "<group>"; };
+		D3751C3317A5B58A00C58FE3 /* TMAPIProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAPIProvider.h; sourceTree = "<group>"; };
+		D3751C3417A5B58A00C58FE3 /* TMAPIProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAPIProvider.m; sourceTree = "<group>"; };
+		D3751C3617A5B5C600C58FE3 /* TypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeDef.h; sourceTree = "<group>"; };
 		DEAA98BF6EFB4EE097B6E47D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -330,6 +334,8 @@
 		AA28D929F991E2712BD7299C /* APIProvider */ = {
 			isa = PBXGroup;
 			children = (
+				D3751C3317A5B58A00C58FE3 /* TMAPIProvider.h */,
+				D3751C3417A5B58A00C58FE3 /* TMAPIProvider.m */,
 			);
 			path = APIProvider;
 			sourceTree = "<group>";
@@ -553,6 +559,7 @@
 				D320238C17A528B7000F5B1E /* Default@2x.png */,
 				D320238E17A528B7000F5B1E /* Default-568h@2x.png */,
 				D3751BE817A5738F00C58FE3 /* Defines.h */,
+				D3751C3617A5B5C600C58FE3 /* TypeDef.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -702,6 +709,7 @@
 				D3751C2A17A5AF5C00C58FE3 /* TMNewsDataProvider.m in Sources */,
 				D3751C2F17A5B05D00C58FE3 /* TMNewsTransaction.m in Sources */,
 				D3751C3217A5B41700C58FE3 /* TMPlacesTransaction.m in Sources */,
+				D3751C3517A5B58A00C58FE3 /* TMAPIProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

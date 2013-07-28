@@ -16,7 +16,7 @@
 
 static TMRestKitManager *instance = NULL;
 
-- (TMRestKitManager *)shared
++ (TMRestKitManager *)shared
 {
     if(instance == NULL){
         instance = [[TMRestKitManager alloc] init];

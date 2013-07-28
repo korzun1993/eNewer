@@ -10,7 +10,7 @@
 
 @interface TMBaseDataProvider : NSObject
 
-@property (nonatomic, strong) NSArray *arrayOfItems;
+@property (nonatomic, strong) NSMutableArray *arrayOfItems;
 @property (nonatomic, strong) NSString *cellReuseIdentifier;
 
 @property (nonatomic, weak) UITableView *targetTable;
