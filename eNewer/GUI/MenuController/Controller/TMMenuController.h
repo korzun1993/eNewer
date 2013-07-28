@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "TMTableBasedController.h"
+#import "TMTransaction.h"
 
 @interface TMMenuController : TMTableBasedController
+
+@property (nonatomic, strong) id <TMTransaction> newsTransaction;
+@property (nonatomic, strong) id <TMTransaction> placesTransaction;
 
 @end

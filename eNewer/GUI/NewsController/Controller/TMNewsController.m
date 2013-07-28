@@ -7,7 +7,15 @@
 //
 
 #import "TMNewsController.h"
+#import "TMNewsDataProvider.h"
+#import "TMNewsCell.h"
 
 @implementation TMNewsController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self configTableWithProvider:[TMNewsDataProvider new] cellClass:[TMNewsCell  class]];
+}
 
 @end

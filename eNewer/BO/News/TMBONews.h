@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *newsDate;
 @property (nonatomic, strong) NSString *newsAnons;
 @property (nonatomic, strong) NSString *newsContent;
+@property (nonatomic, strong) NSString *newsImage;
 @property (nonatomic, strong) TMBOPartner *newsPartner;
 
 + (NSDictionary *)responseMappingDictionary;

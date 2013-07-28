@@ -48,6 +48,7 @@
              @"date" : @"newsDate",
              @"anons" : @"newsAnons",
              @"content" : @"newsContent",
+             @"image" : @"newsImage",
              };
 }
 

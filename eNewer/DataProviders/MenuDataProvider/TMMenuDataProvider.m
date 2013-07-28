@@ -12,7 +12,7 @@
 
 - (void)loadItems
 {
-    self.arrayOfItems = @[@"News",@"Places"];
+    self.arrayOfItems = @[kTMMenuItemNews,kTMMenuItemPlaces];
     [self.targetTable reloadData];
 }
 

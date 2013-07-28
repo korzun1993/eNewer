@@ -27,4 +27,13 @@
     return NO;
 }
 
+- (void)didSelectedCellWithObject:(id)aCellObject
+{
+    if([aCellObject isEqualToString:kTMMenuItemNews]){
+        [self.newsTransaction perform];
+    } else if ([aCellObject isEqualToString:kTMMenuItemPlaces]){
+        [self.placesTransaction perform];
+    }
+}
+
 @end

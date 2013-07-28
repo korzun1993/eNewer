@@ -41,6 +41,11 @@
 		D3751C1F17A5A37E00C58FE3 /* TMMenuTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C1E17A5A37E00C58FE3 /* TMMenuTransaction.m */; };
 		D3751C2217A5A69A00C58FE3 /* TMNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C2117A5A69A00C58FE3 /* TMNewsController.m */; };
 		D3751C2517A5A6BA00C58FE3 /* TMNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C2417A5A6BA00C58FE3 /* TMNewsCell.m */; };
+		D3751C2717A5ABC600C58FE3 /* TMNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3751C2617A5ABC600C58FE3 /* TMNewsCell.xib */; };
+		D3751C2A17A5AF5C00C58FE3 /* TMNewsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C2917A5AF5C00C58FE3 /* TMNewsDataProvider.m */; };
+		D3751C2C17A5AFAC00C58FE3 /* TMNewsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3751C2B17A5AFAC00C58FE3 /* TMNewsController.xib */; };
+		D3751C2F17A5B05D00C58FE3 /* TMNewsTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C2E17A5B05D00C58FE3 /* TMNewsTransaction.m */; };
+		D3751C3217A5B41700C58FE3 /* TMPlacesTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C3117A5B41700C58FE3 /* TMPlacesTransaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +106,14 @@
 		D3751C2117A5A69A00C58FE3 /* TMNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNewsController.m; sourceTree = "<group>"; };
 		D3751C2317A5A6BA00C58FE3 /* TMNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNewsCell.h; sourceTree = "<group>"; };
 		D3751C2417A5A6BA00C58FE3 /* TMNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNewsCell.m; sourceTree = "<group>"; };
+		D3751C2617A5ABC600C58FE3 /* TMNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMNewsCell.xib; sourceTree = "<group>"; };
+		D3751C2817A5AF5C00C58FE3 /* TMNewsDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNewsDataProvider.h; sourceTree = "<group>"; };
+		D3751C2917A5AF5C00C58FE3 /* TMNewsDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNewsDataProvider.m; sourceTree = "<group>"; };
+		D3751C2B17A5AFAC00C58FE3 /* TMNewsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMNewsController.xib; sourceTree = "<group>"; };
+		D3751C2D17A5B05D00C58FE3 /* TMNewsTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNewsTransaction.h; sourceTree = "<group>"; };
+		D3751C2E17A5B05D00C58FE3 /* TMNewsTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNewsTransaction.m; sourceTree = "<group>"; };
+		D3751C3017A5B41700C58FE3 /* TMPlacesTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPlacesTransaction.h; sourceTree = "<group>"; };
+		D3751C3117A5B41700C58FE3 /* TMPlacesTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPlacesTransaction.m; sourceTree = "<group>"; };
 		DEAA98BF6EFB4EE097B6E47D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,6 +160,15 @@
 			path = NewsDetailsController;
 			sourceTree = "<group>";
 		};
+		AA28D0B1C682136CB26D6630 /* NewsDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				D3751C2817A5AF5C00C58FE3 /* TMNewsDataProvider.h */,
+				D3751C2917A5AF5C00C58FE3 /* TMNewsDataProvider.m */,
+			);
+			path = NewsDataProvider;
+			sourceTree = "<group>";
+		};
 		AA28D0D5687DB7BCF7291FAF /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +182,7 @@
 			children = (
 				D3751C2317A5A6BA00C58FE3 /* TMNewsCell.h */,
 				D3751C2417A5A6BA00C58FE3 /* TMNewsCell.m */,
+				D3751C2617A5ABC600C58FE3 /* TMNewsCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -182,6 +205,8 @@
 		AA28D41B0576200B6E32925F /* PlacesTransaction */ = {
 			isa = PBXGroup;
 			children = (
+				D3751C3017A5B41700C58FE3 /* TMPlacesTransaction.h */,
+				D3751C3117A5B41700C58FE3 /* TMPlacesTransaction.m */,
 			);
 			path = PlacesTransaction;
 			sourceTree = "<group>";
@@ -225,6 +250,7 @@
 			children = (
 				D3751C2017A5A69A00C58FE3 /* TMNewsController.h */,
 				D3751C2117A5A69A00C58FE3 /* TMNewsController.m */,
+				D3751C2B17A5AFAC00C58FE3 /* TMNewsController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +258,8 @@
 		AA28D697E2DEB5D8B48B1682 /* NewsTransaction */ = {
 			isa = PBXGroup;
 			children = (
+				D3751C2D17A5B05D00C58FE3 /* TMNewsTransaction.h */,
+				D3751C2E17A5B05D00C58FE3 /* TMNewsTransaction.m */,
 			);
 			path = NewsTransaction;
 			sourceTree = "<group>";
@@ -294,6 +322,7 @@
 			children = (
 				AA28DB73D465F111BCEA69CA /* BaseDataProvider */,
 				AA28DC8D86C9443C49C21393 /* MenuDataProvider */,
+				AA28D0B1C682136CB26D6630 /* NewsDataProvider */,
 			);
 			path = DataProviders;
 			sourceTree = "<group>";
@@ -610,6 +639,8 @@
 				D3751C1417A58E0A00C58FE3 /* news@2x.png in Resources */,
 				D3751C1517A58E0A00C58FE3 /* places.png in Resources */,
 				D3751C1617A58E0A00C58FE3 /* places@2x.png in Resources */,
+				D3751C2717A5ABC600C58FE3 /* TMNewsCell.xib in Resources */,
+				D3751C2C17A5AFAC00C58FE3 /* TMNewsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +699,9 @@
 				D3751C1F17A5A37E00C58FE3 /* TMMenuTransaction.m in Sources */,
 				D3751C2217A5A69A00C58FE3 /* TMNewsController.m in Sources */,
 				D3751C2517A5A6BA00C58FE3 /* TMNewsCell.m in Sources */,
+				D3751C2A17A5AF5C00C58FE3 /* TMNewsDataProvider.m in Sources */,
+				D3751C2F17A5B05D00C58FE3 /* TMNewsTransaction.m in Sources */,
+				D3751C3217A5B41700C58FE3 /* TMPlacesTransaction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

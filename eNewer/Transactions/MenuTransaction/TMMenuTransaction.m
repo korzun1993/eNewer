@@ -8,6 +8,9 @@
 
 #import "TMMenuTransaction.h"
 #import "TMMenuController.h"
+#import "TMNewsTransaction.h"
+#import "TMPlacesTransaction.h"
+
 
 @implementation TMMenuTransaction 
 
@@ -16,8 +19,15 @@
     NSParameterAssert(self.sidePanelController);
     TMMenuController *menuController = [TMMenuController new];
     
-    self.sidePanelController.centerPanel = menuController;
-
+    TMPlacesTransaction *placesTransaction = [TMPlacesTransaction new];
+    placesTransaction.sidePanelController = self.sidePanelController;
+    menuController.placesTransaction = placesTransaction;
+    
+    TMNewsTransaction *newsTransaction = [TMNewsTransaction new];
+    newsTransaction.sidePanelController = self.sidePanelController;
+    menuController.newsTransaction = newsTransaction;
+    
+    self.sidePanelController.leftPanel = menuController;
 }
 
 @end

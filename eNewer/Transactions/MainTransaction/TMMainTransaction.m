@@ -9,6 +9,7 @@
 #import "TMMainTransaction.h"
 #import "JASidePanelController.h"
 #import "TMMenuTransaction.h"
+#import "TMNewsTransaction.h"
 
 @implementation TMMainTransaction
 
@@ -19,7 +20,10 @@
     JASidePanelController *sidePanelConroller = [JASidePanelController new];
     TMMenuTransaction *menuTransaction = [TMMenuTransaction new];
     menuTransaction.sidePanelController = sidePanelConroller;
-
+    
+    TMNewsTransaction *newsTransaction = [TMNewsTransaction new];
+    newsTransaction.sidePanelController = sidePanelConroller;
+    [newsTransaction perform];
     
     self.mainWindow.rootViewController = sidePanelConroller;
     [menuTransaction perform];

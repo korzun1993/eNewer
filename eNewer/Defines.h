@@ -16,3 +16,8 @@
 #pragma mark - Table
 
 #define kTMIntervalBeforeLoading 50
+
+#pragma mark - MenuItems
+
+#define kTMMenuItemNews @"News"
+#define kTMMenuItemPlaces @"Places"
