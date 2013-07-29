@@ -28,6 +28,11 @@
     [self configTableWithProvider:self.dataProvider cellClass:[TMPlacesCell class]];
 }
 
+- (BOOL)isNeedToLeftSelected
+{
+    return NO;
+}
+
 - (void)mapView
 {
     [self.mapTransaction performWithObject:self.dataProvider];
