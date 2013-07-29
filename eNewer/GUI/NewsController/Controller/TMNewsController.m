@@ -15,7 +15,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"News";
     [self configTableWithProvider:[TMNewsDataProvider new] cellClass:[TMNewsCell  class]];
+}
+
+- (void)didSelectedCellWithObject:(id)aCellObject
+{
+    [self.newsDetailsTransaction performWithObject:aCellObject];
 }
 
 @end

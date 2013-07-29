@@ -8,6 +8,7 @@
 
 #import "TMNewsTransaction.h"
 #import "TMNewsController.h"
+#import "TMNewsDetailsTransaction.h"
 
 @implementation TMNewsTransaction
 
@@ -15,8 +16,14 @@
 {
     NSParameterAssert(self.sidePanelController);
     TMNewsController *newsController = [TMNewsController new];
+   
+    UINavigationController *centralPanelNavigation = [[UINavigationController alloc] initWithRootViewController:newsController];
     
-    self.sidePanelController.centerPanel = [[UINavigationController alloc] initWithRootViewController:newsController];
+    TMNewsDetailsTransaction *newsDetailsTransaction = [TMNewsDetailsTransaction new];
+    newsDetailsTransaction.navigation = centralPanelNavigation;
+    newsController.newsDetailsTransaction = newsDetailsTransaction;
+    
+    self.sidePanelController.centerPanel = centralPanelNavigation;
 }
 
 

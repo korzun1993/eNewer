@@ -11,6 +11,7 @@
 		AA28D04D13B966252C088E09 /* TMMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA28DDC3AB4C8212300E0E91 /* TMMenuController.m */; };
 		AA28D0598F5172114000C995 /* TMBOPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = AA28D754246F79DF2FC2945D /* TMBOPartner.m */; };
 		AA28D187C720A197731FD5BF /* eNewer.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = AA28D314B702AEEA1E6172A3 /* eNewer.xcdatamodel */; };
+		AA28D6C8C4B2D3C419730085 /* TMBOGeoPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = AA28DDC2089549E38DCAEA90 /* TMBOGeoPosition.m */; };
 		AA28D89F3FB75AA868863E26 /* TMBONews.m in Sources */ = {isa = PBXBuildFile; fileRef = AA28D3567350D53E2A8D0FD6 /* TMBONews.m */; };
 		AA28DB4D6E27CF95A178EB5C /* TMMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA28D13E44BBFC649778EC0B /* TMMenuController.xib */; };
 		D320237717A528B7000F5B1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D320237617A528B7000F5B1E /* UIKit.framework */; };
@@ -47,6 +48,12 @@
 		D3751C2F17A5B05D00C58FE3 /* TMNewsTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C2E17A5B05D00C58FE3 /* TMNewsTransaction.m */; };
 		D3751C3217A5B41700C58FE3 /* TMPlacesTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C3117A5B41700C58FE3 /* TMPlacesTransaction.m */; };
 		D3751C3517A5B58A00C58FE3 /* TMAPIProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C3417A5B58A00C58FE3 /* TMAPIProvider.m */; };
+		D3751C3A17A633A000C58FE3 /* TMNewsDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C3817A633A000C58FE3 /* TMNewsDetailsController.m */; };
+		D3751C3B17A633A000C58FE3 /* TMNewsDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3751C3917A633A000C58FE3 /* TMNewsDetailsController.xib */; };
+		D3751C3E17A6354700C58FE3 /* TMStandardErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C3D17A6354700C58FE3 /* TMStandardErrorHandler.m */; };
+		D3751C4117A63CC200C58FE3 /* TMNewsDetailsTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C4017A63CC200C58FE3 /* TMNewsDetailsTransaction.m */; };
+		D3751C4417A63FED00C58FE3 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C4317A63FED00C58FE3 /* NSString+HTML.m */; };
+		D3751C4717A6423000C58FE3 /* TMBOPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = D3751C4617A6423000C58FE3 /* TMBOPlace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,10 +61,12 @@
 		AA28D0101B64455C381F25D7 /* TMBONews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBONews.h; sourceTree = "<group>"; };
 		AA28D0404B427AC3FBCD8922 /* TMBOPartner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBOPartner.h; sourceTree = "<group>"; };
 		AA28D13E44BBFC649778EC0B /* TMMenuController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMMenuController.xib; sourceTree = "<group>"; };
+		AA28D170D659A2B4694CD41C /* TMBOGeoPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBOGeoPosition.h; sourceTree = "<group>"; };
 		AA28D314B702AEEA1E6172A3 /* eNewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eNewer.xcdatamodel; sourceTree = "<group>"; };
 		AA28D3567350D53E2A8D0FD6 /* TMBONews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBONews.m; sourceTree = "<group>"; };
 		AA28D5680B31BFD4D68A2F8C /* TMMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMenuController.h; sourceTree = "<group>"; };
 		AA28D754246F79DF2FC2945D /* TMBOPartner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBOPartner.m; sourceTree = "<group>"; };
+		AA28DDC2089549E38DCAEA90 /* TMBOGeoPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBOGeoPosition.m; sourceTree = "<group>"; };
 		AA28DDC3AB4C8212300E0E91 /* TMMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMenuController.m; sourceTree = "<group>"; };
 		D320237317A528B7000F5B1E /* eNewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eNewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D320237617A528B7000F5B1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -118,6 +127,17 @@
 		D3751C3317A5B58A00C58FE3 /* TMAPIProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAPIProvider.h; sourceTree = "<group>"; };
 		D3751C3417A5B58A00C58FE3 /* TMAPIProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAPIProvider.m; sourceTree = "<group>"; };
 		D3751C3617A5B5C600C58FE3 /* TypeDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypeDef.h; sourceTree = "<group>"; };
+		D3751C3717A633A000C58FE3 /* TMNewsDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNewsDetailsController.h; sourceTree = "<group>"; };
+		D3751C3817A633A000C58FE3 /* TMNewsDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNewsDetailsController.m; sourceTree = "<group>"; };
+		D3751C3917A633A000C58FE3 /* TMNewsDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMNewsDetailsController.xib; sourceTree = "<group>"; };
+		D3751C3C17A6354700C58FE3 /* TMStandardErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMStandardErrorHandler.h; sourceTree = "<group>"; };
+		D3751C3D17A6354700C58FE3 /* TMStandardErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMStandardErrorHandler.m; sourceTree = "<group>"; };
+		D3751C3F17A63CC200C58FE3 /* TMNewsDetailsTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNewsDetailsTransaction.h; sourceTree = "<group>"; };
+		D3751C4017A63CC200C58FE3 /* TMNewsDetailsTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNewsDetailsTransaction.m; sourceTree = "<group>"; };
+		D3751C4217A63FED00C58FE3 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		D3751C4317A63FED00C58FE3 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		D3751C4517A6423000C58FE3 /* TMBOPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBOPlace.h; sourceTree = "<group>"; };
+		D3751C4617A6423000C58FE3 /* TMBOPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBOPlace.m; sourceTree = "<group>"; };
 		DEAA98BF6EFB4EE097B6E47D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,6 +180,7 @@
 		AA28D098A070716B8774E31B /* NewsDetailsController */ = {
 			isa = PBXGroup;
 			children = (
+				AA28D9078699CB7D92F9D2D9 /* Controller */,
 			);
 			path = NewsDetailsController;
 			sourceTree = "<group>";
@@ -191,11 +212,28 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		AA28D190F594B50443E070C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA28D4B5670EC43B7C9F3E53 /* StandardErrorHandler */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		AA28D1CC3DE93114B6702BB2 /* BLL */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = BLL;
+			sourceTree = "<group>";
+		};
+		AA28D220B5798745565F08ED /* NSStringCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D3751C4217A63FED00C58FE3 /* NSString+HTML.h */,
+				D3751C4317A63FED00C58FE3 /* NSString+HTML.m */,
+			);
+			path = NSStringCategory;
 			sourceTree = "<group>";
 		};
 		AA28D2B0ED64AE4762A73FD9 /* RestKitMappableModel */ = {
@@ -213,6 +251,15 @@
 				D3751C3117A5B41700C58FE3 /* TMPlacesTransaction.m */,
 			);
 			path = PlacesTransaction;
+			sourceTree = "<group>";
+		};
+		AA28D4B5670EC43B7C9F3E53 /* StandardErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D3751C3C17A6354700C58FE3 /* TMStandardErrorHandler.h */,
+				D3751C3D17A6354700C58FE3 /* TMStandardErrorHandler.m */,
+			);
+			path = StandardErrorHandler;
 			sourceTree = "<group>";
 		};
 		AA28D4E776ED1DE1B4006120 /* Transactions */ = {
@@ -280,6 +327,8 @@
 		AA28D70FB802470A907B0933 /* NewsDetailsTransaction */ = {
 			isa = PBXGroup;
 			children = (
+				D3751C3F17A63CC200C58FE3 /* TMNewsDetailsTransaction.h */,
+				D3751C4017A63CC200C58FE3 /* TMNewsDetailsTransaction.m */,
 			);
 			path = NewsDetailsTransaction;
 			sourceTree = "<group>";
@@ -321,6 +370,16 @@
 			path = PlaceDetailsController;
 			sourceTree = "<group>";
 		};
+		AA28D9078699CB7D92F9D2D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D3751C3717A633A000C58FE3 /* TMNewsDetailsController.h */,
+				D3751C3817A633A000C58FE3 /* TMNewsDetailsController.m */,
+				D3751C3917A633A000C58FE3 /* TMNewsDetailsController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		AA28D91795B79DB7406FB928 /* DataProviders */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +406,14 @@
 				AA28D754246F79DF2FC2945D /* TMBOPartner.m */,
 			);
 			path = Partner;
+			sourceTree = "<group>";
+		};
+		AA28D9417864BEBAC6D4BBBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA28D220B5798745565F08ED /* NSStringCategory */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AA28D9529787A6620A12E66E /* TableBasedController */ = {
@@ -440,6 +507,8 @@
 		AA28DD305D8B20B8DE946969 /* Place */ = {
 			isa = PBXGroup;
 			children = (
+				D3751C4517A6423000C58FE3 /* TMBOPlace.h */,
+				D3751C4617A6423000C58FE3 /* TMBOPlace.m */,
 			);
 			path = Place;
 			sourceTree = "<group>";
@@ -494,8 +563,25 @@
 				AA28DE1E318E72E150F1824E /* News */,
 				AA28DD305D8B20B8DE946969 /* Place */,
 				AA28D932227DE041CFEE9DC3 /* Partner */,
+				AA28DEEBB0656514FE5EF140 /* GeoPosition */,
 			);
 			path = BO;
+			sourceTree = "<group>";
+		};
+		AA28DEE8EEFC28542D05E530 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AA28DEEBB0656514FE5EF140 /* GeoPosition */ = {
+			isa = PBXGroup;
+			children = (
+				AA28D170D659A2B4694CD41C /* TMBOGeoPosition.h */,
+				AA28DDC2089549E38DCAEA90 /* TMBOGeoPosition.m */,
+			);
+			path = GeoPosition;
 			sourceTree = "<group>";
 		};
 		D320236A17A528B7000F5B1E = {
@@ -539,11 +625,14 @@
 				AA28DD583D6735ACDA8998CB /* DAL */,
 				AA28D731272ACC005C96EA16 /* GUI */,
 				D320237F17A528B7000F5B1E /* Supporting Files */,
+				AA28D9417864BEBAC6D4BBBF /* Extensions */,
+				AA28DEE8EEFC28542D05E530 /* Helpers */,
 				D3751BE417A5736900C58FE3 /* AppDelegate */,
 				AA28D4E776ED1DE1B4006120 /* Transactions */,
 				AA28DD1C7F95636183FD4B1F /* DataSources */,
 				AA28D91795B79DB7406FB928 /* DataProviders */,
 				AA28DA8414A18A72E53F5AF6 /* Resources */,
+				AA28D190F594B50443E070C6 /* Services */,
 			);
 			path = eNewer;
 			sourceTree = "<group>";
@@ -648,6 +737,7 @@
 				D3751C1617A58E0A00C58FE3 /* places@2x.png in Resources */,
 				D3751C2717A5ABC600C58FE3 /* TMNewsCell.xib in Resources */,
 				D3751C2C17A5AFAC00C58FE3 /* TMNewsController.xib in Resources */,
+				D3751C3B17A633A000C58FE3 /* TMNewsDetailsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +800,12 @@
 				D3751C2F17A5B05D00C58FE3 /* TMNewsTransaction.m in Sources */,
 				D3751C3217A5B41700C58FE3 /* TMPlacesTransaction.m in Sources */,
 				D3751C3517A5B58A00C58FE3 /* TMAPIProvider.m in Sources */,
+				D3751C3A17A633A000C58FE3 /* TMNewsDetailsController.m in Sources */,
+				D3751C3E17A6354700C58FE3 /* TMStandardErrorHandler.m in Sources */,
+				D3751C4117A63CC200C58FE3 /* TMNewsDetailsTransaction.m in Sources */,
+				D3751C4417A63FED00C58FE3 /* NSString+HTML.m in Sources */,
+				D3751C4717A6423000C58FE3 /* TMBOPlace.m in Sources */,
+				AA28D6C8C4B2D3C419730085 /* TMBOGeoPosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

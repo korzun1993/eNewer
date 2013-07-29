@@ -4,6 +4,7 @@
 
 #import "TMRestKitManager.h"
 #import "TMBONews.h"
+#import "TMBOPlace.h"
 
 @interface TMRestKitManager()
 
@@ -34,7 +35,7 @@ static TMRestKitManager *instance = NULL;
     
     [self.newsObjectManager.HTTPClient setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status == AFNetworkReachabilityStatusNotReachable) {
-            
+            [TMStandardErrorHandler showErrorWithTitle:@"Error" message:@"No Internet connection"];
         }
     }];
     [self configMappings];
@@ -43,6 +44,7 @@ static TMRestKitManager *instance = NULL;
 - (void)configMappings
 {
     [TMBONews configureMappingWithManager:self.newsObjectManager];
+    [TMBOPlace configureMappingWithManager:self.placesObjectManager];
 }
 
 + (RKObjectManager *)objectManagerWithURL:(NSString *)anURL

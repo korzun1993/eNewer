@@ -7,7 +7,10 @@
 //
 
 #import "TMTableBasedController.h"
+#import "TMTransactionWithObject.h"
 
 @interface TMNewsController : TMTableBasedController
+
+@property (nonatomic, strong) id <TMTransactionWithObject> newsDetailsTransaction;
 
 @end

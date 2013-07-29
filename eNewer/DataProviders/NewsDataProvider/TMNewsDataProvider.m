@@ -20,7 +20,7 @@
         [self.targetTable reloadData];
         [self loadFullInfo];
     } errorHandler:^(NSError *anError) {
-        
+        [TMStandardErrorHandler showErrorWithError:anError];
     }];
 }
 
@@ -44,7 +44,7 @@
             }
     
     } errorHandler:^(NSError *anError) {
-        
+        [TMStandardErrorHandler showErrorWithError:anError];
     }];
 }
 

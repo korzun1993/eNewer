@@ -12,6 +12,7 @@
 #define kTMGetNewsUrl @"/mob_app/"
 #define kTMPlacesBaseUrl @"http://www.bashneft-azs.ru"
 #define kTMImagesBaseUrl @"http://88.198.31.245:8072"
+#define kTMAllGasStantionUrl @"/export.php?all_gas_station"
 
 #pragma mark - Table
 
