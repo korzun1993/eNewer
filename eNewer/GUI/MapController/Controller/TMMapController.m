@@ -10,7 +10,7 @@
 #import "TMMapHelper.h"
 #import "TMBOPlace.h"
 
-@interface TMMapController ()<MKMapViewDelegate>
+@interface TMMapController ()<MKMapViewDelegate, PlacesDataProviderDelegate>
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 
@@ -22,6 +22,12 @@
 {
     [super viewDidLoad];
     self.title = @"Places";
+    [self loadItems];
+    self.placesDataProvider.delegate = self;
+}
+
+- (void)loadItems
+{
     [TMMapHelper createAnnotationsOnMap:self.mapView withLocationsArray:self.placesDataProvider.arrayOfItems];
     [TMMapHelper makeVisibleAllLocations:self.placesDataProvider.arrayOfItems onMap:self.mapView];
 }

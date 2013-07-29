@@ -8,6 +8,14 @@
 
 #import "TMBaseDataProvider.h"
 
+@protocol PlacesDataProviderDelegate <NSObject>
+
+- (void)loadItems;
+
+@end
+
 @interface TMPlacesDataProvider : TMBaseDataProvider
+
+@property (nonatomic, weak) id <PlacesDataProviderDelegate> delegate;
 
 @end

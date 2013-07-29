@@ -18,6 +18,7 @@
         [MBProgressHUD hideAllHUDsForView:self.targetTable animated:YES];
         self.arrayOfItems = anObject;
         [self.targetTable reloadData];
+        [self.delegate loadItems];
     } errorHandler:^(NSError *anError) {
         [MBProgressHUD hideAllHUDsForView:self.targetTable animated:YES];
         [TMStandardErrorHandler showErrorWithError:anError];
