@@ -4,3 +4,4 @@ pod "RestKit"
 pod "JASidePanels"
 pod 'KoaPullToRefresh'
 pod 'JSONKit'
+pod 'MBProgressHUD'

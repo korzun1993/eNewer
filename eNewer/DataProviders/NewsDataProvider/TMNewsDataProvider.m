@@ -14,12 +14,15 @@
 
 - (void)loadItems
 {
+    [MBProgressHUD showHUDAddedTo:self.targetTable animated:YES];
     [TMAPIProvider loadListOfNewsSuccessHandler:^(id anObject) {
+        [MBProgressHUD hideHUDForView:self.targetTable animated:YES];
         NSDictionary *result = anObject;
         self.arrayOfItems = result.allValues.mutableCopy;
         [self.targetTable reloadData];
         [self loadFullInfo];
     } errorHandler:^(NSError *anError) {
+        [MBProgressHUD hideHUDForView:self.targetTable animated:YES];
         [TMStandardErrorHandler showErrorWithError:anError];
     }];
 }

@@ -31,9 +31,9 @@
     [placeMapping addPropertyMapping:relationShipResponseNewsMapping];
     
     RKResponseDescriptor *responsePlaceDescriptor =
-    [RKResponseDescriptor responseDescriptorWithMapping:geoMapping
+    [RKResponseDescriptor responseDescriptorWithMapping:placeMapping
                                                  method:RKRequestMethodGET
-                                            pathPattern:kTMAllGasStantionUrl
+                                            pathPattern:nil
                                                 keyPath:@"stations"
                                             statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
     

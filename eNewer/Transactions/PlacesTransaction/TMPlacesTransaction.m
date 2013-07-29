@@ -7,12 +7,30 @@
 //
 
 #import "TMPlacesTransaction.h"
+#import "TMPlaceListController.h"
+#import "TMMapTransaction.h"
+#import "TMPlaceDetailsTransaction.h"
+
 
 @implementation TMPlacesTransaction
 
 - (void)perform
 {
     NSParameterAssert(self.sidePanelController);
+    
+    TMPlaceListController *placesList = [TMPlaceListController new];
+    UINavigationController *placeListNavigation = [[UINavigationController alloc] initWithRootViewController:placesList];
+    
+    TMPlaceDetailsTransaction *placeTransaction = [TMPlaceDetailsTransaction new];
+    placeTransaction.navigation = placeListNavigation;
+    placesList.placeDetailsTrasnaction = placeTransaction;
+    
+    TMMapTransaction *mapTransaction = [TMMapTransaction new];
+    mapTransaction.navigation = placeListNavigation;
+    mapTransaction.placeDetailsTransaction = placeTransaction;
+    placesList.mapTransaction = mapTransaction;
+    
+    self.sidePanelController.centerPanel = placeListNavigation;
 }
 
 @end

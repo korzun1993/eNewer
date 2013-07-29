@@ -14,4 +14,6 @@
 
 + (void)loadInfoAboutNewsWithID:(NSString *)newsID successHandler:(successWithObject)aSuccesshandler errorHandler:(errorHandler)anErrorHandler;
 
++ (void)loadPlacesSuccessHandler:(successWithObject)aSuccesshandler errorHandler:(errorHandler)anErrorHandler;
+
 @end

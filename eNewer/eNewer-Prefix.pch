@@ -8,6 +8,7 @@
 #import "Defines.h"
 #import "TypeDef.h"
 #import "TMStandardErrorHandler.h"
+#import "MBProgressHUD.h"
 
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iOS SDK 3.0 and later."
